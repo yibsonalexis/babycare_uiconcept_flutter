@@ -29,7 +29,18 @@ class _RegisterPageState extends State<RegisterPage> {
                 clipper: LoginCustomClipper(),
                 child: _buttonsSignUp(size, context),
               ),
-            )
+            ),
+            Positioned(
+              top: 40,
+              left: 20,
+              child: IconButton(
+                  icon: Icon(
+                    FontAwesomeIcons.arrowLeft,
+                    size: 30,
+                    color: Theme.of(context).primaryColor,
+                  ),
+                  onPressed: () => Navigator.pop(context)),
+            ),
           ],
         ),
       ),
